@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Africa",
+    "id": "1",
+    "Population": "1,110,635,000",
+    "Size": "30,221,532km²",
+    "Countreys": "54",
+    "Traveled": "Yes",
+    "Background": "#78acba"
+  },
+  {
+    "name": "Antarctica",
+    "id": "2",
+    "Population": "4,490",
+    "Size": "14,000,000km²",
+    "Countreys": "0",
+    "Traveled": "Yes",
+    "Background": "#6195a3"
+  },
+  {
+    "name": "Asia",
+    "id": "3",
+    "Population": "4,298,723,000",
+    "Size": "44,579,000km²",
+    "Countreys": "48",
+    "Traveled": "No",
+    "Background": "#3f8193"
+  },
+  {
+    "name": "Europe",
+    "id": "4",
+    "Population": "742,452,000",
+    "Size": "10,180,000km²",
+    "Countreys": "50",
+    "Traveled": "No",
+    "Background": "#2c859e"
+  },
+  {
+    "name": "North America",
+    "id": "5",
+    "Population": "565,265,000",
+    "Size": "24,709,000km²",
+    "Countreys": "23",
+    "Traveled": "Yes",
+    "Background": "#2497b7"
+  },
+  {
+    "name": "Oceania(Australia)",
+    "id": "6",
+    "Population": "38,304,000",
+    "Size": "8,525,989km²",
+    "Countreys": "14",
+    "Traveled": "Yes",
+    "Background": "#138bad",
+    "Foreground": "white"
+  },
+  {
+    "name": "South America",
+    "id": "7",
+    "Population": "406,740,000",
+    "Size": "17,840,000km²",
+    "Countreys": "12",
+    "Traveled": "No",
+    "Background": "#70a6aa"
+  }
+]
