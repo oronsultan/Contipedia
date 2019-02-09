@@ -7,7 +7,6 @@ import { MatGridList } from "@angular/material";
 
 const gridByBreakpoint = [
   { width: 1200, col: 3 },
-  { width: 992, col: 2 },
   { width: 768, col: 2 },
   { width: 450, col: 1 }
 ];
@@ -33,26 +32,20 @@ export class AppComponent implements OnInit {
     const self = this;
     this.dataService.getData().subscribe(res => {
       self.data = res;
-      // this.data = this.dataService.getData() as Idata[];
-      // console.log('My Items', item);
-      this.traveledClr = "#c2d87f";
-      this.traveledClrHover = "#488743";
-      this.currentContinent = this.data[0];
+      self.traveledClr = "#c2d87f";
+      self.traveledClrHover = "#488743";
+      self.currentContinent = self.data[0];
     });
 
-    this.onResize(window.innerWidth);
+    self.onResize(window.innerWidth);
   }
 
   onResize(width) {
     for (let i = 0; i < gridByBreakpoint.length; i++) {
       if (width <= gridByBreakpoint[i].width) {
         this.breakpoint = gridByBreakpoint[i].col;
-      } else {
-        break;
       }
     }
-
-    console.log(this.breakpoint)
   }
 
   onChange(newValue) {

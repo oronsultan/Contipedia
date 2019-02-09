@@ -9,6 +9,7 @@
   src: url("//db.onlinewebfonts.com/t/251c35fe6eeec7ffa3d335357aabcbd0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/251c35fe6eeec7ffa3d335357aabcbd0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/251c35fe6eeec7ffa3d335357aabcbd0.woff") format("woff"), url("//db.onlinewebfonts.com/t/251c35fe6eeec7ffa3d335357aabcbd0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/251c35fe6eeec7ffa3d335357aabcbd0.svg#ProximaNovaSoftW03-Semibold") format("svg");
 }
 body {
+  padding: 30px;
   width: 100%;
   /* min-height: 2000px; */
   margin: 3em auto;
@@ -23,6 +24,7 @@ body {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   /* IE6-9 fallback on horizontal gradient */
   font-family: 'Roboto', sans-serif;
+  background-size: cover;
   letter-spacing: 1px;
 }
 
@@ -312,10 +314,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-color: rgb(202, 187, 205);
   }
   .mat-grid-tile-footer {
+    display: flex;
     background-color: transparent !important;
     font-size: 12px !important;
     color: white !important;
-    margin-left: 42%;
   }
   .tileHover:hover {
     background-color: #7e8932 !important;

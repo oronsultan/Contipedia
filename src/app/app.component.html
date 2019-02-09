@@ -1,28 +1,36 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<ng-container *ngIf="data">
-  <div style="text-align:center">
-    <br />
+<div class="div-flexed" *ngIf="data">
+  <div class="div-main-child" id="div-heading" style="text-align:center">
     <img width="120" alt="Angular Logo" src="assets/globe.png" />
-    <br />
-    <h1 class="animated fadeInDown"><i class="icon icon-arrow-down"></i></h1>
     <h1 class="animated rotateIn">Please select a continent</h1>
   </div>
-  <div style="margin-top:1%;width:200px;position:absolute;left:45%;">
+  <div class="div-main-child" id="div-select-box" style="margin-top:1%;">
     <select class="custom-select" (change)="onChange($event.target.value)">
       <option *ngFor="let continent of data" [value]="continent.id">
         {{ continent.name }}
       </option>
     </select>
   </div>
-  <div style="margin-top:4%;width:800px;position:absolute;left:35%;">
-    <mat-grid-list [cols]="breakpoint" rowHeight="70px" gutterSize="16px" (window:resize)="onResize($event.target.innerWidth)">
+  <div
+    class="div-main-child"
+    id="div-grid-result"
+    style="margin-top:4%;width:70%;"
+  >
+    <mat-grid-list
+      [cols]="breakpoint"
+      rowHeight="70px"
+      gutterSize="16px"
+      (window:resize)="onResize($event.target.outerWidth)"
+    >
       <mat-grid-tile
+        [colspan]="breakpoint"
         [rowspan]="1"
         [style.background]="currentContinent.Background"
       >
         Population: {{ currentContinent.Population }}
       </mat-grid-tile>
       <mat-grid-tile
+        [colspan]="(breakpoint / 3) * 2"
         [rowspan]="1"
         [style.background]="currentContinent.Background"
       >
@@ -35,32 +43,37 @@
         Size: {{ currentContinent.Size }}
       </mat-grid-tile>
       <mat-grid-tile
-        (click)="onRowClicked()"
         onmouseover=""
         style="cursor: pointer;"
         class="tileHover"
+        (click)="onRowClicked()"
+        [colspan]="breakpoint"
         [rowspan]="2"
         [style.background]="traveledClr"
       >
         <mat-grid-tile-footer>
-          Click to edit
+          <span id="span-click">
+            Click to edit
+          </span>
         </mat-grid-tile-footer>
-        Traveled: {{ currentContinent.Traveled }}
+        <div id="div-traveled">
+          <span>Traveled: {{ currentContinent.Traveled }}</span>
+        </div>
       </mat-grid-tile>
     </mat-grid-list>
     <br />
-    <div *ngIf="divVisibilty">
+    <div *ngIf="divVisibilty" class="div-flexed">
       <input
         type="text"
         maxlength="3"
         (keyup)="onKey($event)"
-        style="background-color: whitesmoke;border: transparent;position: absolute;left:25%;text-align:center;border-radius: 10px;"
+        style="background-color: whitesmoke;border: transparent;text-align:center;border-radius: 10px;margin:auto"
       />
       <br />
       <button
         id="btnUpdate"
         class="button"
-        style="margin-left: 230px;margin-top: 10px;"
+        style="margin:auto;margin-top: 10px;"
         (click)="updateItem()"
       >
         Update
@@ -68,4 +81,4 @@
     </div>
   </div>
   <router-outlet></router-outlet>
-</ng-container>
+</div>

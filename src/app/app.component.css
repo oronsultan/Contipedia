@@ -1,0 +1,12 @@
+.div-flexed {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-main-child {
+  margin: auto;
+}
+
+#span-click{
+  margin: auto;
+}
