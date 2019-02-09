@@ -305,7 +305,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   option {
     background-color: transparent;
     border-radius: 15px;
-    background-color: rgb(202, 187, 205);
+    background-color: rgb(42, 148, 254);
+    color:white;
   }
   .mat-grid-tile-footer {
     display: flex;
