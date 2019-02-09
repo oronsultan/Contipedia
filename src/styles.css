@@ -15,20 +15,8 @@ body {
   padding: 30px;
   width: 100%;
   height: 100%;
-  /* min-height: 2000px; */
-  margin: 0;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7cac9+0,92a8d1+100 */
-  background: #f7cac9;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #f7cac9 0%, #92a8d1 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #f7cac9 0%, #92a8d1 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #f7cac9 0%, #92a8d1 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  /* IE6-9 fallback on horizontal gradient */
   font-family: 'Roboto', sans-serif;
-
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
   letter-spacing: 1px;
   background-repeat: no-repeat;
   background-attachment: fixed;
